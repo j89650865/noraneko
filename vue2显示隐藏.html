@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <title>Vue 1</title>
+</head>
+<body>
+
+<div id="vueApp1">
+
+
+
+        <input type="button" value="显示隐藏" @click="a=!a">
+        <div style="width: 200px;height: 200px;background:#000;" v-show="a"> </div>
+    </form>
+</div>
+
+
+<script>
+    window.onload=function () {
+        var app = new Vue({
+            el : '#vueApp1',
+            data:{
+
+                a:true,
+            },
+            methods:{
+                fun:function (e){
+                    e.preventDefault();
+                    console.log(e.clientY);
+                },
+
+            }
+        })
+    }
+
+</script>
+</body>
+</html>

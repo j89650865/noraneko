@@ -1,0 +1,453 @@
+body {
+    font-size: 12px;
+    color: #000;
+    font-family:'Tahoma','宋体','microsoft Yahei','Arial','Verdana','Helvetica','sans-serif';
+}
+a {
+    text-decoration:none;
+    color: #000;
+    font-family:'Tahoma','宋体','microsoft Yahei','Arial','Verdana','Helvetica','sans-serif';
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix {
+    zoom:1
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.no_border_bottom {
+    border-bottom: none !important;
+}
+
+.contain {
+    width: 1200px;
+    margin: 0 auto;
+}
+.contain2 {
+    width: 960px;
+    margin: 0 auto;
+}
+.contain3 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.spacing {
+    height: 8px;
+}
+
+/* 按钮 */
+.p_btn {
+    display: inline-block;
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background: #0691ec;
+    font-size: 12px;
+}
+
+
+/* 遮罩层 */
+.p_mask {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+    display: none;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+
+/* 弹窗样式 */
+.p_pannel {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background: #fff;
+    display: none;
+}
+/*.js_pannel_1 {*/
+    /*position: absolute;*/
+    /*top: 50px;*/
+    /*-webkit-transform: translate(-50%,0);*/
+    /*-moz-transform: translate(-50%,0);*/
+    /*-ms-transform: translate(-50%,0);*/
+    /*-o-transform: translate(-50%,0);*/
+    /*transform: translate(-50%,0);*/
+/*}*/
+.pannel_top {
+    height: 48px;
+    line-height: 48px;
+    background: #1a95e7;
+    position: relative;
+}
+.pannel_top h2 {
+    color: #fff;
+    font-weight: normal;
+    text-indent: 18px;
+}
+.pannel_top h2 span{
+    font-size: 12px;
+    font-weight: normal;
+}
+.pannel_top .close {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: url(../images/close1.jpg) no-repeat center;
+    cursor: pointer;
+}
+
+.goods_choose {
+    padding: 0 10px;
+}
+
+
+/* 弹窗样式2 */
+.p_pannel_2 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    padding: 7px;
+    box-sizing: border-box;
+}
+.p_pannel_2 .main_box {
+    background: #fff;
+    padding-bottom: 20px;
+}
+.p_pannel_2 .top {
+    height: 40px;
+    line-height: 40px;
+    background: #f3f3f3;
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+}
+.p_pannel_2 .top h2 {
+    color: #000;
+    font-weight: normal;
+    text-indent: 18px;
+}
+.p_pannel_2 .close {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: url(../images/spe_close.jpg) no-repeat center;
+    cursor: pointer;
+}
+.p_pannel_2 .content {
+    padding: 18px 0;
+}
+.p_pannel_2 .bottom {
+    padding: 0 12px;
+    margin-left: 15px;
+    background: #f3f3f3;
+    line-height: 45px;
+    border-top: 1px solid #e1e1e1;
+}
+.p_pannel_2 .bottom .mes span {
+    color: #ff0000;
+    font-weight: bold;
+}
+.p_pannel_2 .bottom a {
+    width: 67px;
+    height: 30px;
+    margin: 8px 0 0 15px;
+    text-align: center;
+    line-height: 30px;
+}
+.p_pannel_2 .bottom .keep {
+    background: #f75a03;
+    color: #fff;
+}
+.p_pannel_2 .bottom .cancel {
+    background: #ececec;
+    color: #333;
+    border: 1px solid #c9c9c9;
+    box-sizing: border-box;
+}
+
+.p_pannel_2 .spe_num  {
+    padding: 0 15px;
+}
+.p_pannel_2 .spe_num input {
+    border: 1px solid #c6c6c6;
+    text-indent: 4px;
+}
+
+.p_pannel_2 .edit_price {
+    margin: 0 15px;
+    border: 1px solid #c9c9c9;
+    padding: 0 8px 20px;
+}
+.p_pannel_2 .edit_price .cell {
+    border-bottom: 1px dashed #c9c9c9;
+    padding: 6px 0;
+}
+.p_pannel_2 .cell .txt {
+    width: 100px;
+    height: 16px;
+    border: 1px solid #a9a9a9;
+    text-indent: 4px;
+}
+.p_pannel_2 .cell input[type="checkbox"]{
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+.p_pannel_2 .cell .del {
+    color: #3166cd;
+    margin-left: 10px;
+}
+.p_pannel_2 .add_price {
+    color: #3166cd;
+    background: url(../images/add.jpg) no-repeat left center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+
+
+    /* 头部 */
+.head {
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 3px;
+    background: #f7f7f7;
+}
+#head {
+    height: 33px;
+}
+#head2 {
+    height: 35px;
+    padding-top: 5px;
+}
+
+#nav {
+    height: 37px;
+    background: url(../Business_center/images/nav_bg.jpg) repeat-x;
+}
+
+#nav2 {
+    height: 45px;
+    background: #13a1ed;
+}
+
+
+/* 面包屑导航 */
+.break_nav {
+    height: 44px;
+}
+
+#main {
+    margin-top: 10px;
+}
+#main .left {
+    width: 200px;
+}
+#main .right {
+    width: 990px;
+}
+
+
+/* 尾部 */
+#footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    height: 80px;
+    background: #f6f6f6;
+}
+
+#footer2 {
+    width: 100%;
+    height: auto;
+    background: url(../images/sbsb_bg.png) repeat-x left -276px;
+    color: #999;
+    text-align: left;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 20px;
+}
+.item_tit{
+    background: url(../images/tit_x7.png) repeat-x;
+    height: 28px;
+    line-height: 28px;
+    margin: 1px;
+    position: relative;
+    zoom: 1;
+}
+.middle-right{
+    float: left;
+    width: 792px;
+    margin: 00px 0 28px 10px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.btnBox{
+    margin-top:20px;
+    text-align: left;
+
+}
+.btn_blue{
+    display: inline-block;
+    margin-right:30px;
+    text-align: center;
+    line-height:31px;
+    width: 77px;
+    height: 31px;
+    background: inherit;
+    background-color: rgba(26, 144, 227, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Arial Negreta', 'Arial Normal', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.ulBox{
+    padding: 10px;
+    margin-top:20px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+}
+.ulBox p{
+    color: #333;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Microsoft yahei';
+}
+.ulBox li{
+    text-align: left;
+    position: relative;
+    height: 33px;
+    margin: 7px 0;
+    padding: 0 10px;
+    line-height: 33px;
+    border: 1px solid #add2fe;
+    background-color: #daeaff;
+}
+.ulBox li .centerWord{
+    position: absolute;
+    left:45%;
+
+}
+.even a{
+    display: inline-block;
+    width:23px;
+    height:100%;
+    margin:0 5px;
+    text-align: center;
+
+}
+.even a img{
+    vertical-align: middle;
+}
+.even .add{
+
+}
+.popWin_input{
+    border:1px solid #dddddd;
+    width:100%;
+    height:23px;
+    line-height:25px;
+    padding:0 5px;
+}
+.select-table{
+    margin:20px 30px;
+}
+.selectProduct .dialog-con tr{
+    margin-top:10px;
+    overflow: hidden;
+}
+.selectProduct .dialog-con td{
+    padding:5px 5px;
+}
+.dialog_btn{
+    margin-left:20px;
+    padding:5px 10px;
+    background: #1895e5;
+    color: #fff;
+}
+#previewImgBox{
+    width:220px;
+    height:85px;
+}
+.previewImg{
+    width:100%;
+    max-height:100%;
+
+}
+.formTable{
+    margin-top:10px;
+    width:100%;
+    border:solid #D9E6F0; border-width:1px 0px 0px 1px;
+}
+.formTable td,.formTable th{border:solid #D9E6F0; border-width:0px 1px 1px 0px; padding:10px 0px;}
+
+.formTable th{
+    background: #E4F7FF;
+}
+.goodListImg{
+    width:40px;
+    height:40px;
+}
+.formTable .edit img{
+    vertical-align: middle;
+}
+.hide{
+    display: none;
+}
+.addGood{
+    color: #0066cc;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/test1.js"></script>
+
+    <title>Vue 1</title>
+</head>
+<body>
+
+<div id="vueApp1">
+    {{message}}
+    <br/>
+    {{note}}
+    <form action="">
+            <input type="text" v-model="message" @click="fun()" placeholder="edit me" >
+            <input type="text"  @click="fun()" placeholder="edit me" >
+            <input type="reset" value="reset">
+            </form>
+            <div >
+                <ul>
+                    <li v-for="(value,key,index) in json"> {{value}} {{key}} {{index}}</li>
+                    <li v-for="a in arr"> {{a}} </li>
+
+           <!--v-for 在VUE 2.0 删除了　$index  和 $key 的写法　，如需使用，需要在 v-for 指令当中添加需要的参数-->
+        </ul>
+        <input type="button" @click="add()" value="按钮show">
+    </div>
+
+</div>
+
+<script>
+
+</script>
+</body>
+</html>
